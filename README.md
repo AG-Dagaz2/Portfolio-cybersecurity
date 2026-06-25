@@ -1,4 +1,4 @@
-# Hugo Delporte - Portfolio cybersecurity
+# Hugo Delporte - Cybersecurity Portfolio
 
 ## About Me
 
@@ -20,18 +20,41 @@ Personal infrastructure used for experimentation and learning.
 Static and dynamic analysis of malware samples
 
 ### SIEM Deployement
+Deployment and configuration of security monitoring solutions for log collection, correlation and incident detection.
+
 
 ## Skills
 
- - Basic of Python, C, Powershell, SQL, Bash,...
- - Linux
- - Fortinet firewall
- - Cisco and TP-Link switch
- - AD security
+### Programming & Scripting
+- Python
+- PowerShell
+- Bash
+- SQL
+- C
+
+### Systems
+- Linux
+- Active Directory
+
+### Networking
+- Cisco Switching
+- TP-Link Switching
+- VLAN Configuration
+- Routing Fundamentals
+
+### Security
+- Malware Analysis
+- OSINT
+- SIEM Deployment
+- Active Directory Security
+- Network Security
+- Forensic
  
 ## Certifications
 
+Currently pursuing professional certifications in the domain of cloud security
+
 ## Contact
 
-LinkedIn:
+LinkedIn: Coming soon
 Email: delportehugo@protonmail.com

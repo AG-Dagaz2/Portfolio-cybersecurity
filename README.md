@@ -9,7 +9,7 @@ Graduate in cybersecurity in 2026 with interests in:
 - SOC
 - Network Security
 - Active Directory Security
-- Everything except Cybersecurity Governance
+- **Everything except Cybersecurity Governance**
 
 ## Projects
 

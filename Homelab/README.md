@@ -1,164 +1,107 @@
 # Homelab
 
-## Overview
+A self-hosted infrastructure built around a Raspberry Pi 5 and designed to explore system administration, networking, security, automation, backup strategies, and self-hosting technologies.
 
-This homelab is a personal self-hosted environment running on a Raspberry Pi 5 (8GB RAM). It serves as a platform for learning, experimentation, and hosting services used on a daily basis.
-
-The objective of this project is to develop practical skills across multiple IT domains, including system administration, networking, virtualization alternatives, service deployment, automation, backup management, and self-hosting.
-
-Unlike many laboratory environments focused on a single technology, this homelab combines several real-world services that are actively used and maintained.
+The homelab serves both as a learning environment and as a production environment for several services used on a daily basis.
 
 ---
 
-## Infrastructure
+## Table of Contents
 
-### Hardware
-
-* Raspberry Pi 5 (8GB RAM)
-* Personal workstation used for administration
-* Dedicated NAS (added later to offload storage services)
-
-### Network
-
-The homelab is connected through a mesh Wi-Fi infrastructure linked to the ISP router.
-
-The wireless network is separated into multiple SSIDs:
-
-* Private Network
-* IoT Network
-* Guest Network
-
-This separation allows connected devices to be grouped according to their purpose and usage.
+* [Architecture](#architecture)
+* [Active Services](#active-services)
+* [Legacy Projects](#legacy-projects)
+* [Technologies Used](#technologies-used)
 
 ---
 
-## Services Currently Deployed
+## Architecture
 
-### Pi-hole
+### Documentation
 
-Network-wide DNS filtering solution used to:
-
-* Block advertisements
-* Reduce tracking
-* Improve browsing experience
-* Monitor DNS activity
-
-Alternative solutions such as AdGuard Home were also evaluated before choosing Pi-hole.
-
-### WireGuard VPN
-
-Secure remote access solution allowing administration of the homelab from external networks.
-
-This service replaced a previous OpenVPN deployment after evaluating performance, simplicity, and ease of maintenance.
-
-### Navidrome
-
-Self-hosted music streaming platform providing access to a personal music library from multiple devices.
-
-### UrBackup
-
-Centralized backup solution used to protect important systems and data.
-
-The project provided practical experience with backup strategies, retention policies, and recovery planning.
-
-### Home Assistant
-
-Home automation platform used to manage and monitor connected devices.
-
-This project introduced concepts related to IoT integration, automation workflows, and service interoperability.
-
-### Minecraft Server
-
-Game server hosted for personal use and multiplayer sessions with friends.
-
-The deployment involved service management, resource monitoring, and network configuration.
+* [Network Topology](architecture/network-topology.md)
+* [Security Design](architecture/security-design.md)
+* [Design Philosophy](architecture/design-philosophy.md)
 
 ---
 
-## Previous Projects
+## Active Services
 
-Several services were deployed, tested, and later retired as infrastructure requirements evolved.
-
-### Nextcloud
-
-Self-hosted cloud storage platform.
-
-The service was discontinued after the deployment of a dedicated NAS better suited for storage workloads.
-
-### FileBrowser
-
-Web-based file management solution used to access files remotely.
-
-Retired once storage management was migrated to the NAS infrastructure.
-
-### Go Web Application
-
-Personal web application project developed in Go and integrating AI-related features.
-
-The project was ultimately not completed but provided valuable experience in web service deployment and application development.
-
-### RetroPie
-
-Retro gaming platform project.
-
-Explored as a proof of concept but not pursued further.
+| Service                                     | Purpose                              |
+| ------------------------------------------- | ------------------------------------ |
+| [WireGuard](services/wireguard.md)          | Secure remote access                 |
+| [Pi-hole](services/pihole.md)               | DNS filtering and network visibility |
+| [UrBackup](services/urbackup.md)            | Automated file backups               |
+| [Home Assistant](services/homeassistant.md) | Home automation platform             |
+| [Navidrome](services/navidrome.md)          | Self-hosted music streaming          |
+| [Minecraft Server](services/minecraft.md)   | Multiplayer game hosting             |
 
 ---
 
-## Skills Developed
+## Legacy Projects
 
-### System Administration
+These projects are no longer part of the current infrastructure but represent important milestones in the evolution of the homelab.
 
-* Linux administration
-* Service deployment
-* Service maintenance
-* Backup management
-* Troubleshooting
+| Project                                                         | Description                       |
+| --------------------------------------------------------------- | --------------------------------- |
+| [Nextcloud](legacy-projects/nextcloud.md)                       | Personal cloud platform           |
+| [FileBrowser](legacy-projects/filebrowser.md)                   | Lightweight file-sharing solution |
+| [OpenVPN to WireGuard](legacy-projects/openvpn-to-wireguard.md) | VPN infrastructure migration      |
+
+---
+
+## Technologies Used
+
+### Infrastructure
+
+* Raspberry Pi 5
+* Linux
+* Docker
+* Docker Compose
+* Portainer
 
 ### Networking
 
-* DNS management
-* VPN deployment
-* Wireless network segmentation
-* Remote access configuration
+* WireGuard
+* Pi-hole
+* DDNS (No-IP)
+* TP-Link Mesh Network
 
-### Self-Hosting
+### Services
 
-* Application deployment
-* Containerized services
-* Resource optimization
-* Service monitoring
+* Home Assistant
+* Navidrome
+* UrBackup
+* Minecraft Server
 
-### Project Management
+### Security
 
-* Evaluation of alternative solutions
-* Infrastructure evolution
-* Migration planning
-* Documentation and maintenance
+* VPN-only remote access
+* WPA2/WPA3 wireless security
+* Network separation through dedicated SSIDs
+* DNS filtering
 
 ---
 
-## Lessons Learned
+## Repository Structure
 
-This homelab demonstrated the challenges involved in maintaining production-like services in a constrained environment.
-
-Key takeaways include:
-
-* Balancing resource consumption on limited hardware
-* Maintaining service availability
-* Planning migrations between solutions
-* Managing backups effectively
-* Designing services around real user needs rather than technical experimentation alone
+```text
+homelab/
+│
+├── architecture/
+├── services/
+├── legacy-projects/
+└── images/
+```
 
 ---
 
 ## Future Improvements
 
-Planned areas of exploration include:
+Potential future developments include:
 
-* Advanced monitoring
-* Centralized logging
-* Infrastructure automation
-* Reverse proxy solutions
-* Identity and access management
+* VLAN-based network segmentation
+* Additional home automation integrations
+* Expanded monitoring capabilities
 * Additional self-hosted services
+* Enhanced backup strategy

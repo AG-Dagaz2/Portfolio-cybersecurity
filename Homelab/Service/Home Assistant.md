@@ -99,6 +99,7 @@ Remote access is performed exclusively through the WireGuard VPN infrastructure.
 This design reduces the attack surface while maintaining secure access from external networks.
 
 ---
+<img width="2558" height="1350" alt="image" src="https://github.com/user-attachments/assets/5e8a91f9-7557-4211-a820-0e73d79ecf4d" />
 
 ## Lessons Learned
 

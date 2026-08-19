@@ -99,6 +99,7 @@ Access is restricted to:
 This design minimizes external exposure while maintaining convenient remote access.
 
 ---
+<img width="2559" height="1351" alt="image" src="https://github.com/user-attachments/assets/e8181807-a5b6-47a1-b9d3-b3599306be1e" />
 
 ## Lessons Learned
 

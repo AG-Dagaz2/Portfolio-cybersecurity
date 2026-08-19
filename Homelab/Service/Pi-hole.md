@@ -113,6 +113,7 @@ The deployment contributes to the overall security posture of the homelab by:
 Although DNS filtering is not a complete security solution, it provides an effective additional layer of protection.
 
 ---
+<img width="2559" height="1355" alt="image" src="https://github.com/user-attachments/assets/c77d66ba-bfbd-45c0-b2c8-d662b5512389" />
 
 ## Lessons Learned
 

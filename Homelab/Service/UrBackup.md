@@ -94,6 +94,7 @@ The primary selection criteria were:
 Given the limited storage capacity available within the homelab, storage optimization was a major factor in the decision-making process.
 
 ---
+<img width="2559" height="1355" alt="image" src="https://github.com/user-attachments/assets/e871fcd6-1f81-443c-a728-7f0aa55302a7" />
 
 ## Lessons Learned
 

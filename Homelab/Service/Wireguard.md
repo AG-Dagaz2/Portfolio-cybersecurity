@@ -98,6 +98,7 @@ Several principles guided the deployment:
 This design significantly reduces the number of services reachable from the Internet.
 
 ---
+<img width="650" height="508" alt="Capture d&#39;écran 2026-08-19 171849" src="https://github.com/user-attachments/assets/d0627fbd-f94d-47f3-95c4-6f99e7489321" />
 
 ## Lessons Learned
 
